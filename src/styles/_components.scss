@@ -1,0 +1,66 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
+.button-default {
+  @include button-base;
+  background: $color-01;
+  color: $color-06;
+}
+
+.button-default:hover {
+  background: $color-05;
+  color: $color-02;
+}
+
+.icon-dropdown-default {
+  @include icon-dropdown-base;
+  color: $color-01;
+}
+
+.icon-dropdown-default:hover {
+  color: $color-accent;
+}
+
+.icon-dropdown-default:active {
+  color: $color-02;
+}
+
+.category-default {
+  @include category-base;
+  color: $color-03;
+}
+
+.category-default:hover {
+  color: $color-accent;
+}
+
+.category-default:active {
+  color: $color-01;
+}
+
+.input-heading-default {
+  @include input-heading-base;
+  color: $color-01;
+}
+
+.input-default {
+  @include input-base;
+  color: $color-02;
+}
+
+.dropdown-default {
+  @include dropdown-base;
+  color: $color-01;
+}
+
+.dropdown-default:hover {
+  color: $color-accent;
+}
+
+.card-large {
+  @include card-large;
+}
+
+.card-small {
+  @include card-small;
+}

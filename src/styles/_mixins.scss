@@ -1,0 +1,91 @@
+@use 'variables' as *;
+
+@mixin button-base {
+  border: none;
+  border-radius: $radius-lg;
+  font-weight: $font-weight-semibold;
+  text-align: center;
+  line-height: 1;
+  padding: 12px 42px;
+  font-size: 16px;
+
+  // Mobile
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+@mixin icon-dropdown-base {
+  width: 24px;
+  height: 24px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+}
+
+@mixin category-base {
+  display: inline-flex;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  font-size: $font-size-text2;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-text2-mobile;
+  }
+}
+
+@mixin input-heading-base {
+  font-size: $font-size-text1;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-text1-mobile;
+  }
+}
+
+@mixin input-base {
+  border: 1px solid $color-04;
+  border-radius: $radius-lg;
+  font-size: $font-size-text2;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-text2-mobile;
+  }
+}
+
+@mixin dropdown-base {
+  font-size: $font-size-text2;
+
+  @media (max-width: 768px) {
+    font-size: $font-size-text2-mobile;
+  }
+}
+
+@mixin card-base {
+  background-color: $color-06;
+  border-radius: $radius-md;
+
+  @media (max-width: 768px) {
+    border-radius: $radius-sm;
+  }
+}
+
+@mixin card-large {
+  @include card-base;
+  padding: 40px;
+
+  @media (max-width: 768px) {
+    padding: 28px;
+  }
+}
+
+@mixin card-small {
+  @include card-base;
+  padding: 24px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+}

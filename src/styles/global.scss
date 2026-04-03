@@ -1,0 +1,18 @@
+@use 'variables' as *;
+@use 'typography' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-basic;
+  background-color: $color-06;
+  color: $color-01;
+}
+
+.logo {
+  font-family: $font-logo;
+}
