@@ -1,0 +1,86 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/typography' as *;
+
+.header {
+  width: 100%;
+  background-color: $color-06;
+
+  @media (max-width: 768px) {
+    height: 50px;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 18px 10px;
+
+  @media (max-width: 1200px) {
+    padding: 13px 0;
+  }
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notifications {
+  display: flex;
+  gap: 4px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  img {
+    display: block;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.username {
+  color: $color-02;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333153;
+  gap: 8px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.textBold {
+  font-weight: 700;
+}
